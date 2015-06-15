@@ -20,6 +20,6 @@
  * Created  : 26 Apr 2015
  */
 
-$plugin->version    = 2015042600;
+$plugin->version    = 2015051501;
 $plugin->requires   = 2013110500;
 $plugin->component  = 'block_sbresources';

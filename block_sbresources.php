@@ -34,6 +34,24 @@ class block_sbresources extends block_list
     function get_content()
     {
         global $CFG, $DB, $OUTPUT;
+
+        if ($this->content !== NULL) {
+            return $this->content;
+        }
+
+        $this->content = new stdClass();
+        $this->content->items = array();
+        $this->content->icons = array();
+        $this->content->footer = '';
+
+
+
+        $pages = array();
+        if (empty($pages)) {
+            $this->content->items[] = get_string('noresources', 'block_sbresources');
+        }
+
+        return $this->content;
     }
 
     function get_aria_role()

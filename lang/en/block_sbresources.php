@@ -20,5 +20,6 @@
  * Created  : 26 Apr 2015
  */
 
+$string['noresources']             = 'No resources available';
 $string['pluginname']              = 'SmartsBridge Resources';
 $string['sbresources:addinstance'] = 'Add a new SmartsBridge resources block';
